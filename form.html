@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Sedona form</title>
+	<meta name="viewport" content="width=device-width, initial-scale =1">
+</head>
+<body>
+	<header class="page-header">
+
+		<div class="page-header__logo logo">	
+			<img src="img/logo.png" alt="Логотип" class="logo__image" width="100" height="100">
+		</div>
+
+	  <nav class="main-navigation">
+
+			<button class="main-navigation__toggle">
+				<span class="visually-hidden">	Открыть меню </span>
+			</button>
+		
+      <ul class="main-navigation__list site-list">	
+				<li class="site-list__item">	
+					<a href="#" class="site-list__link">Главная</a>
+				</li>
+				<li class="site-list__item">	
+					<a href="#" class="site-list__link">Фото и видео</a>
+				</li>
+				<li class="site-list__item">	
+				  <a href="#" class="site-list__link">Форма отзыва</a>
+				</li>
+				<li class="site-list__item">	
+					<a href="#" class="site-list__link">HTML Academy</a>
+				</li>
+      </ul>
+	  </nav>
+  </header>
+  <main class="page-main">
+  	<section class="comments">
+  		<h1 class="comments__header">Подбор программы</h1>
+  		<p class="comments__text">Помогите нашим отелям стать лучше!
+  		Оставьте отзывы о них, а так же о посещенных вами достопримечательностях</p>
+
+  		<form action="https://echo.htmlacademy.ru" method="POST" class="comments__form question-form">
+  			<fieldset class="question-form__field field-about">	
+  				<p class="field-about__caption">Представьтесь:</p>
+						<label for="field-about__name" class="field-about__label">Имя*
+							<input type="text" class="field-about__name" name="field-about__name" placeholder="Петр">
+						</label>
+
+						<label for="field-about__surname" class="field-about__label">Фамилия*
+							<input type="text" class="field-about__surname" name="field-about__surname" placeholder="Иванов">
+						</label>
+
+						<label for="field-about__lastname" class="field-about__label">Отчество
+							<input type="text" class="field-about__lastname" placeholder="Александрович" name="field-about__lastname">
+						</label>
+  			</fieldset>
+
+  			<fieldset class="question-form__field field-contacts">	
+  				<p class="field-contacts__caption">Контактная информация:</p>
+						<label for="field-contacts__name" class="field-contacts__label">Контактный телефон*:
+							<input type="text" class="field-contacts__phone" name="field-contacts__phone" placeholder="Введите телефон">
+						</label>
+
+						<label for="field-contacts__surname" class="field-contacts__label">Электронная почта*
+							<input type="text" class="field-contacts__email" name="field-contacts__email" placeholder="Введите e-mail">
+						</label>
+  			</fieldset>
+
+  			<fieldset class="question-form__field field-impression">	
+  				<p class="field-impression__caption">Ваше общее впечатление:</p>
+  				<label for="field-impression__radio--1" class="field-impression__label">Скорее положительное
+  				<input type="radio" name="field-impression__radio" id="field-impression__radio--1" class="field-impression__radio--1" value="positive" checked>
+  				</label>
+
+  				<label for="field-impression__radio--2" class="field-impression__label">Скорее отрицательное
+  				<input type="radio" name="field-impression__radio" id="field-impression__radio--2" class="field-impression__radio--2" value="neutral">
+  				</label>
+
+  				<label for="field-impression__radio--3" class="field-impression__label">Затрудняюсь ответить
+  				<input type="radio" name="field-impression__radio" id="field-impression__radio--3" class="field-impression__radio--3" value="negative"></label>	
+  			</fieldset>
+
+  			<fieldset class="question-form__field field-place">	
+  				<p class="field-place__caption">Посещенные достопримечательности:</p>
+
+  				<label for="field-place__checkbox--bridge" class="field-place__label">Мост Дьявола
+  				<input type="checkbox" name="field-place__checkbox field-place__checkbox--bridge" id="field-place__checkbox--bridge" value="bridge" checked>
+  				</label>
+
+  				<label for="field-place__checkbox--mountain" class="field-place__label">Гора-Колокол
+  				<input type="checkbox" name="field-place__checkbox field-place__checkbox--mountain" id="field-place__checkbox--mountain" value="mountain" checked>
+  				</label>
+
+  				<label for="field-place__checkbox--park" class="field-place__label">Слайд-парк
+  				<input type="checkbox" name="field-place__checkbox field-place__checkbox--park" id="field-place__checkbox--park" value="park" checked>
+  				</label>
+
+  				<label for="field-place__checkbox--rocks" class="field-place__label">Красные скалы
+  				<input type="checkbox" name="field-place__checkbox field-place__checkbox--rocks" id="field-place__checkbox--rocks" value="rocks">
+  				</label>
+
+  			<fieldset class="question-form__field field-emotion">	
+  				<p class="field-emotion__caption">Опишите свои эмоции:</p>
+
+  				<textarea class="field-emotion__text"
+  				name="field-emotion__text" rows="10" cols="30" placeholder="Опишите подробно все свои восторги"></textarea>
+				</fieldset>
+
+				<button class="question-form__button button">Отправить отзыв</button>
+  		</form>
+  	</section>
+  </main>
+  <footer class="page-footer">
+	  		<a href="#" class="page-footer__logo">#visitsedona</a>
+	  		
+	  		<ul class="page-footer__social social">
+	  			<li class="social__link social__link--vk">Вконтакте</li>
+	  			<li class="social__link social__link--fb">Фейсбук</li>
+	  			<li class="social__link social__link--instagram">Инстаграм</li>
+	  		</ul>
+
+	  		<div class="page-footer__htmlacademy-logo htmlacademy-logo">
+	  			<b class="htmlacademy__text">Разработано:</b>
+					<a href="#" class="htmlacademy__link">HTML Academy</a>
+	  		</div>
+  </footer>
+</body>
+</html>
