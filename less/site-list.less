@@ -1,0 +1,42 @@
+@import "variables.less";
+
+.site-list {
+	margin: 0;
+	padding: 0;
+  /*width: 100%;*/
+	list-style: none;
+	font-size: 18px;
+	line-height: 40px;
+
+	background-color: #81b3d2;
+	&__item {
+		text-align: center;
+		display: block;
+	}
+	&__link {
+		text-decoration: none;
+    text-transform: uppercase;
+    color: #eef5f9;
+	}
+}
+
+@media(min-width: @tablet-width) {
+	.site-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #fff;
+    font-size: 14px;
+    line-height: 26px;
+ 
+    &__link {
+    	color: #000000;
+    }
+    &__item {
+    	&:nth-child(2) {
+    		margin-left: 78px;
+    		margin-right: 210px;
+    	}
+    }
+	}
+}
