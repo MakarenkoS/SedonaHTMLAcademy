@@ -1,0 +1,30 @@
+@import "variables.less";
+
+
+.logo {
+	position: absolute;
+	left: 50%;
+	margin-left: -51px;
+	bottom: 0;
+	margin-bottom: -87px;	
+}
+
+@media(min-width: @tablet-width) {
+	
+	.logo {
+		margin-bottom: -32px;
+		z-index: 2;
+	}
+}
+
+@media(min-width: @tablet-width) {
+	
+	.logo {
+		margin-left: -93px;
+		&__image {
+			width: 186px;
+			height: 96px;
+			/*margin-left: -93px;*/
+		}
+	}
+}

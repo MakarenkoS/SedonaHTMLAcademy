@@ -44,26 +44,26 @@
   			<fieldset class="question-form__field field-about">	
   				<p class="field-about__caption">Представьтесь:</p>
 						<label for="field-about__name" class="field-about__label">Имя*
-							<input type="text" class="field-about__name" name="field-about__name" placeholder="Петр">
+							<input type="text" class="field-about__name" id="field-about__name" name="field-about__name" placeholder="Петр">
 						</label>
 
 						<label for="field-about__surname" class="field-about__label">Фамилия*
-							<input type="text" class="field-about__surname" name="field-about__surname" placeholder="Иванов">
+							<input type="text" class="field-about__surname" id="field-about__surname" name="field-about__surname" placeholder="Иванов">
 						</label>
 
 						<label for="field-about__lastname" class="field-about__label">Отчество
-							<input type="text" class="field-about__lastname" placeholder="Александрович" name="field-about__lastname">
+							<input type="text" class="field-about__lastname" id="field-about__lastname" placeholder="Александрович" name="field-about__lastname">
 						</label>
   			</fieldset>
 
   			<fieldset class="question-form__field field-contacts">	
   				<p class="field-contacts__caption">Контактная информация:</p>
-						<label for="field-contacts__name" class="field-contacts__label">Контактный телефон*:
-							<input type="text" class="field-contacts__phone" name="field-contacts__phone" placeholder="Введите телефон">
+						<label for="field-contacts__phone" class="field-contacts__label">Контактный телефон*:
+							<input type="text" class="field-contacts__phone" name="field-contacts__phone" id="field-contacts__phone" placeholder="Введите телефон">
 						</label>
 
-						<label for="field-contacts__surname" class="field-contacts__label">Электронная почта*
-							<input type="text" class="field-contacts__email" name="field-contacts__email" placeholder="Введите e-mail">
+						<label for="field-contacts__email" class="field-contacts__label">Электронная почта*
+							<input type="text" class="field-contacts__email" id="field-contacts__email" name="field-contacts__email" placeholder="Введите e-mail">
 						</label>
   			</fieldset>
 
@@ -99,6 +99,7 @@
   				<label for="field-place__checkbox--rocks" class="field-place__label">Красные скалы
   				<input type="checkbox" name="field-place__checkbox field-place__checkbox--rocks" id="field-place__checkbox--rocks" value="rocks">
   				</label>
+  			</fieldset>
 
   			<fieldset class="question-form__field field-emotion">	
   				<p class="field-emotion__caption">Опишите свои эмоции:</p>

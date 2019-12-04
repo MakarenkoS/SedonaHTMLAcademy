@@ -1,0 +1,111 @@
+@import "variables.less";
+
+.hotel {
+	text-align: center;
+	&__offer {
+		margin: 0;
+		padding: 0;
+		padding-top: 20px;
+		font-family: "PTSans";
+		font-size: 21px;
+		line-height: 26px;
+		text-transform: uppercase;	
+	}
+
+	&__dates {
+		margin: 0;
+		padding: 0;
+		padding: 0 20px;
+		margin-top: 25px;
+		font-size: 14px;
+		line-height: 24px;
+		text-transform: uppercase;
+		color: #333333;
+		&--br {
+			display: none;	
+		}
+	}
+
+	&__button {
+		margin-top: 40px;
+	}
+
+	&__image {
+		display: block;
+	}
+
+	&__map {
+		display: block;
+		margin: 0 auto;
+		margin-top: 50px;
+		position: relative;
+		/*width: 320px;*/
+			&::after {
+				z-index: 10;
+				position: absolute;
+				content: "";
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+				
+				width: 27px;
+				height: 27px;
+				background: url("../img/map-ping.svg")
+			};	
+	  }
+}
+
+@media(min-width: @tablet-width) {
+	.hotel {
+		&__offer {
+			font-size: 30px;
+			line-height: 26px;
+			padding-top: 55px;
+		}
+
+		&__dates {
+			line-height: 24px;
+			margin-top: 30px;	
+		  &--br {
+		  	display: block;	
+		  }
+		}
+		&__button {
+			margin-top: 45px;
+	  }
+
+	  &__map {
+	  	margin-top: 60px;
+	  }
+
+	  &__map--image{
+	  	width: 768px;
+	  	height: 350px;
+	  }
+
+	}
+}
+
+@media(min-width: @desktop-width) {
+	.hotel {
+		&__offer {
+		padding-top: 50px;
+		}	
+
+		&__button {
+			margin-top: 50px;
+	  }
+	  &__map {
+	  	margin-top: 65px;
+	  	height: 350px;
+	  }
+
+	  &__map--image{
+	  	width: 1200px;
+	  	height: 350px;
+	  }
+
+	}
+
+
+}

@@ -1,0 +1,73 @@
+@import "variables.less";
+
+.page-footer {
+	text-align: center;
+	padding-top: 38px;
+	padding-bottom: 20px;
+	&__hash-tag {
+		font-weight: 700;
+		font-size: 21px;
+		line-height: 26px;
+		color: black;
+		text-transform: uppercase;
+		text-decoration: none;
+	}
+
+	&__social {
+		display: flex;
+		justify-content: center;
+		margin-top: 40px;
+	}
+
+	&__htmlacademy{
+		margin-top: 40px;
+	}
+}
+
+@media(min-width: @tablet-width) {
+	.page-footer {
+		display: flex;
+		justify-content: center;
+		padding-bottom: 36px;
+		
+		&__hash-tag {
+			width: 256px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		&__social {
+			width: 256px;
+			margin-top: 0;
+		}
+
+		&__htmlacademy {
+			width: 256px;
+			margin-top: 0;
+		}
+
+
+	}
+}
+
+@media(min-width: @desktop-width) {
+	.page-footer {
+		background-color: #fff;
+
+		&__hash-tag {
+			width: 400px;
+		}
+
+		&__social {
+			width: 400px;
+			margin-top: 0;
+		}
+
+		&__htmlacademy {
+			width: 400px;
+			margin-top: 0;
+		}
+
+	}
+}

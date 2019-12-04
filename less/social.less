@@ -1,0 +1,35 @@
+.social {
+	&__list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	width: 150px;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	
+  }
+	&__link {
+		background-color: #81b3d2;
+		width: 46px;
+		height: 48px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		&:hover {
+			background-color: #669ec0;
+		}
+		&:active{
+			background-color: #5496bd;
+		
+		}; 
+	}
+
+	&__icon {
+		display: flex;
+		&:active {
+			opacity: 0.3;
+		};
+	}
+}
