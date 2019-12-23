@@ -1,0 +1,129 @@
+@import "variables.less";
+
+.field-place {
+	margin-top: 50px;	
+	&__caption {
+		margin: 0;
+		padding: 0;
+		font-size: 18px;
+		line-height: 26px;
+		text-transform: uppercase;
+		color: #000;
+		font-weight: 700;
+		margin-bottom: 30px;	
+	}
+
+	&__label {
+		position: relative;
+		font-size: 18px;	
+		line-height: 26px;	
+		font-weight: 700;	
+		margin-left: 70px;	
+		&:hover {
+			opacity: 0.6;
+		}
+	}
+
+	&__column {
+		width: 280px;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: left;
+		margin-bottom: 45px;	
+		&:last-child {
+			margin-bottom: 25px;	
+		};
+	}
+
+	&__checkbox {
+		position: absolute;
+		content: "";
+		left: -70px;
+		top: -10px;
+		width: 56px;
+		height: 56px;
+		border-radius: 2px;
+		background-color: #f2f2f2;
+	}
+
+	&__label input[type='checkbox']:checked + .field-place__checkbox {
+    &::before {
+			position: absolute;
+			content: "";
+			width: 14px;
+			height: 5px;
+			left: 18px;
+			top: 27px;
+			background-color: #000;
+			transform: rotate(45deg);
+    }; 
+    &::after {
+			position: absolute;
+			content: "";
+			width: 22px;
+			height: 5px;
+			left: 24px;
+			top: 24px;
+			background-color: #000;
+			transform: rotate(-45deg);
+    } 
+	}
+}
+
+@media(min-width: @tablet-width) {
+	.field-place {
+		width: 648px;
+
+		&__caption {
+			font-size: 21px;
+			width: 648px;
+		}
+
+		&__wrapper {
+			width: 460px;
+			display: flex;
+		  flex-wrap: wrap;
+		  justify-content: space-between;
+		  flex-direction: row;
+		  margin: 0 auto;
+		}
+
+		&__column {
+			width:200px;
+			padding: 0;
+			&::before {
+        position: absolute;
+        content: "";
+        left: 0;
+        top:26px;
+        width: 125px;
+        height: 1px;
+        background-color: #dbdbdb;
+			};
+			&::after {
+        position: absolute;
+        content: "";
+        right: 0;
+        top:26px;
+        width: 125px;
+        height: 1px;
+        background-color: #dbdbdb;
+			};
+		}
+	}
+}
+
+@media(min-width: @desktop-width) {
+	.field-place {
+		width: 968px;
+		padding-top: 60px;
+		&__caption {
+			width: 968px;
+			margin-bottom: 50px;
+		}
+		&__wrapper {
+			width: 960px;
+		}
+	}
+}

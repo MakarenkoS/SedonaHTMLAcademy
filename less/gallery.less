@@ -1,0 +1,22 @@
+@import "variables.less";
+
+.gallery {
+  width: 280px;
+  margin: 0 auto;
+}
+
+@media(min-width: @tablet-width) {
+	.gallery {
+		width: 648px;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		flex-direction: row;
+	}
+}
+
+@media(min-width: @desktop-width) {
+	.gallery {
+		width: 1200px;
+	}
+}

@@ -1,0 +1,128 @@
+@import "variables.less";
+
+.field-emotion {
+	padding: 0;
+	margin: 0;
+	margin-top: 50px;	
+	&__caption {
+		margin: 0;
+		padding: 0;
+		font-size: 18px;
+		line-height: 26px;
+		text-transform: uppercase;
+		color: #000;
+		font-weight: 700;
+		margin-bottom: 45px;	
+	}
+
+	&__column {
+		width: 100%;
+		padding: 0 20px;
+		text-align: center;	
+	}
+
+
+	&__text {
+		width: 88%;
+		background-color: #f2f2f2;
+		border: none;	  
+		margin: 0 auto;	
+		padding: 20px;
+		min-height: 160px;
+	}
+}
+
+.field-emotion__text[placeholder] {
+	color: #000;
+	opacity: 1;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 26px;
+}
+
+.field-emotion__text::-moz-placeholder {
+	color: #000;
+	font-weight: 700;
+	opacity: 1;
+	font-size: 18px;
+	line-height: 26px;
+}
+
+
+.field-emotion__text:-moz-placeholder {
+	color: #000;
+	opacity: 1;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 26px;
+}
+.field-emotion__text:-ms-input-placeholder {
+	color: #000;
+	opacity: 1;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 26px;
+}
+
+.field-emotion__text[placeholder]:hover {
+	opacity: 0.8;
+}
+
+.field-emotion__text:hover::-moz-placeholder {
+	opacity: 0.8;	
+}
+
+.field-emotion__text:hover:-moz-placeholder {
+	opacity: 0.8;
+}
+
+.field-emotion__text:hover:-ms-input-placeholder {
+	opacity: 0.8;
+}
+
+
+@media(min-width: @tablet-width) {
+	.field-emotion {
+		width: 648px;
+		&__caption {
+			font-size: 21px;
+			margin-bottom: 55px;	
+			&::before {
+        position: absolute;
+        content: "";
+        left: 0;
+        top:12px;
+        width: 125px;
+        height: 1px;
+        background-color: #dbdbdb;
+			};
+			&::after {
+        position: absolute;
+        content: "";
+        right: 0;
+        top:12px;
+        width: 125px;
+        height: 1px;
+        background-color: #dbdbdb;
+			};
+		}
+
+		&__text {
+			width: 100%;
+		}
+	}
+}
+
+@media(min-width: @desktop-width) {
+
+	.field-emotion {
+		width: 960px;
+	  margin-top: 30px;
+	  &__column {
+	  	width: 960px;
+	  	padding: 0;
+	  }
+
+	}
+
+}

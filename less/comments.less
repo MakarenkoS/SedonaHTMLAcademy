@@ -1,0 +1,52 @@
+@import "variables.less";
+
+.comments {
+	text-align: center;
+	padding-bottom: 40px;
+	&__header {
+		margin: 0;
+		padding: 0;
+		font-size: 18px;
+		line-height: 26px;
+		color: #000;
+		text-transform: uppercase;
+		padding-top: 45px;
+		font-weight: 700;
+	} 
+
+	&__text {
+		margin: 0;
+		padding: 0;
+		font-size: 14px;
+		line-height: 24px;
+		text-transform: uppercase;
+		color: #333;
+		margin-top: 30px;
+		position: relative;
+		font-weight: 400;
+	}
+
+	&__form {
+		
+	}
+}
+
+@media(min-width: @tablet-width) {
+	.comments {
+		padding-bottom: 100px;
+		&__header {
+			font-size: 30px;
+			line-height: 26px;
+			padding-top: 60px;
+		}
+	}
+}
+
+@media(min-width: @desktop-width) {
+	.comments {
+		background-color: #fff;
+		&__header {
+		padding-top:100px;
+	  }
+	}
+}

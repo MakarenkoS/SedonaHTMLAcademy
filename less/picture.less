@@ -1,0 +1,163 @@
+@import "variables.less";
+
+.picture {
+	text-align: left;
+  margin-bottom: 45px;
+ 
+	&__image {
+		display: block;
+		margin: 0 auto;
+	}
+
+	&__caption {
+		margin: 0;
+		padding: 0;
+		padding-top: 20px;
+		text-transform: uppercase;
+		font-size: 14px;
+		line-height: 24px;
+		font-weight: 700;
+	}
+
+	&__author {
+		margin: 0;
+		padding: 0;
+		margin-top: 5px;
+		color: #333333;
+	}
+
+	&__likes-button {
+		position: relative;
+		border: none;
+		background-color: transparent;
+		&::before {
+			position: absolute;
+			content: "";
+			left: 0;
+			top: -17px;
+			width: 22px;
+			height: 22px;
+			/*background-color: #000;*/
+			background-image: url("../img/icon-like.svg");
+			cursor: pointer;
+		}
+
+		&:hover::before {
+			opacity: 0.8;
+		}
+	}
+
+	&__likes-count {
+		margin: 0;
+		padding: 0;
+		display: inline-block;
+		margin-top: 10px;
+		margin-left: 12px;
+		color: #000;
+		font-size: 14px;
+		line-height: 24px;
+		font-weight: 700;
+
+	}
+
+
+}
+
+@media(min-width: @tablet-width) {
+	.picture {
+		
+		width: 324px;
+		position: relative;
+		margin-bottom: 0;
+		background-color: #f2f2f2;
+    &:hover {
+    	background-color: #eaeaea;
+    }
+		&__image {
+			width: 324px;
+			height: 267px;
+		}
+		&__caption {
+		  margin-left: 20px;
+	  }
+
+	  &__author {
+	  	margin-left: 20px;
+	  	padding-bottom: 20px;
+	  }
+	}
+
+	.picture--large {
+		width:648px;
+	}
+
+	.picture__image--large {
+		width: 648px;
+		height: 400px;
+	}
+
+	.picture__likes--element {
+		position: absolute;
+		left: 236px;
+		bottom: 30px;
+	}
+
+	.picture--large .picture__likes--element {
+		left: 563px;
+	}
+}
+
+@media(min-width: @desktop-width) {
+	.picture {
+		width: 400px;
+		&__image {
+			width: 400px;
+			height: 267px;
+		}
+
+		&__text {
+			position: absolute;
+			z-index: 3;
+			right: 0;
+			left: 0;
+			bottom: 0;
+			background-color: rgba(0,0,0,0.3);
+
+		}
+
+		&__caption {
+			color: #d3d3d2;
+		}
+
+		&__author {
+			color: #d3d3d2;
+		}
+
+		&__likes-count {
+			color: #d3d3d2;
+		}
+  }
+		
+	.picture:hover .picture__text {
+		background-color: rgba(0,0,0,0.5);
+	}
+
+	.picture--large {
+		width:1200px;
+	}
+
+	.picture__image--large {
+		width: 1200px;
+		height: 400px;
+  }
+
+  .picture__likes--element {
+  	left: 315px;
+  }
+
+
+	.picture--large .picture__likes--element {
+		left: 1111px;
+	}
+
+}
