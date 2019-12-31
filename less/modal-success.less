@@ -20,9 +20,22 @@
 	}
 	
 	&__button {	
+	
+		padding: 16px 50px;
 		margin: 0 auto;
 		margin-bottom: 20px;
 		margin-top: 40px;
 	}
 }
 
+
+@media (min-width: @desktop-width) {
+.modal-success {
+	  &__text {
+		padding: 0 100px;
+	  }
+    &__button {
+  	  padding: 16px 150px;	
+    }
+  }
+}
